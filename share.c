@@ -25,7 +25,6 @@ int main(){
       if(!strcmp(in,"d")){
         shmdt(data);
         shmctl(shmid, IPC_RMID, NULL);
-        printf("segment contains: %s\n", data);
         break;
       } 
       else if(!strcmp(in,"a")) receive_input("type your modification: ",data,200);
